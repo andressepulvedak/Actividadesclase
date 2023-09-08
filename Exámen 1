@@ -1,0 +1,98 @@
+#1. Calcular el voltaje 
+'''
+corriente = float(input("Ingresa el valor de la corriente: "))
+resistencia = float(input("Ingresa el valor de la resistencia: "))
+voltaje = corriente * resistencia
+
+print(f"El voltaje en el circuito es: {voltaje} voltios")
+
+ '''
+
+# 2. Taylor Swift
+
+precio_año_pasado = float(input("Precio del vuelo el año pasado "))
+
+precio_año_actual = 8000
+
+diferencia_precio = precio_año_actual - precio_año_pasado
+
+print(diferencia_precio)
+
+Porcentaje_incremento = (diferencia_precio / precio_año_pasado) * 100
+
+print(Porcentaje_incremento)
+
+
+
+
+
+
+
+# 3. Número par o impar
+'''
+numero = int(input("Ingresa un número: "))
+
+if numero % 2 == 0:
+    print(f"El número {numero} es par.")
+else:
+    print(f"El número {numero} es impar.")
+'''
+
+
+
+
+# 4. Biblioteca
+'''
+Libros = ["Biblia", "Corán", "Principito", "El diario de Greg", "Programación en Python", "Algoritmos avanzados", "Algebra de Baldor"]
+
+Libros.append("MindHunter")
+Libros.append("Harry Potter")
+Libros.append("Percy Jackson")
+Libros.append("Lupin")
+
+print(Libros)
+
+Libros.remove("Biblia")
+Libros.remove("Corán")
+
+print(Libros)
+
+Libros[1], Libros[3] = Libros[3], Libros[1]
+
+print(Libros)
+'''
+
+
+
+# 5. Lupe
+'''
+apotema = float(input("Ingresa el valor de la apotema hex: "))
+Lado = float(input("Ingresa el valor del lado hex: "))
+Perímetro = (Lado * 6)
+AreaHexágono = 0.5 * Perímetro * apotema
+
+print(f"El perímetro del hexágono es {Perímetro} unidades")
+print(f"El área del hexágono es {AreaHexágono} unidades cuadradas")
+
+apotema = float(input("Ingresa el valor de la apotema pent: "))
+Lado = float(input("Ingresa el valor del lado pent: "))
+Perímetro = (Lado * 5)
+AreaPentágono = (Perímetro * apotema) / 2
+
+print(f"El perímetro del pentágono es {Perímetro} unidades")
+print(f"El área del pentágono es {AreaPentágono} unidades cuadradas")
+
+if AreaHexágono > AreaPentágono:
+    print("La llanta hexagonal es mejor")
+
+if AreaPentágono > AreaHexágono:
+    print("La llanta pentagonal es mejor")
+'''
+    
+
+
+
+
+
+
+

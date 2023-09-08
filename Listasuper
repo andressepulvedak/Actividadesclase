@@ -1,0 +1,13 @@
+fib =[1,1]
+
+print(fib)
+
+fib.insert(len(fib), fib[len(fib)-1] + fib[len(fib)-2])
+fib.insert(len(fib), fib[len(fib)-1] + fib[len(fib)-2])
+fib.insert(len(fib), fib[len(fib)-1] + fib[len(fib)-2])
+fib.insert(len(fib), fib[len(fib)-1] + fib[len(fib)-2])
+fib.insert(len(fib), fib[len(fib)-1] + fib[len(fib)-2])
+fib.insert(len(fib), fib[len(fib)-1] + fib[len(fib)-2])
+
+
+print(fib)

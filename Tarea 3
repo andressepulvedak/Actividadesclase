@@ -1,0 +1,127 @@
+# 1.
+'''
+def main():
+    meses = {
+        "enero": 31,
+        "febrero": 28,
+        "marzo": 31,
+        "abril": 30,
+        "mayo": 31,
+        "junio": 30,
+        "julio": 31,
+        "agosto": 31,
+        "septiembre": 30,
+        "octubre": 31,
+        "noviembre": 30,
+        "diciembre": 31
+    }
+
+    mes = input("Introduce un mes: ")
+
+    if mes in meses:
+        dias = meses[mes]
+        print(f"El mes de {mes} tiene {dias} días.")
+    
+if __name__ == "__main__":
+    main()
+'''
+
+# 2. 
+'''
+def main():
+    dias_semana = {
+        "lunes": 1,
+        "martes": 2,
+        "miércoles": 3,
+        "jueves": 4,
+        "viernes": 5,
+        "sábado": 6,
+        "domingo": 7
+    }
+
+    dia = input("Introduce un día de la semana: ")
+
+    if dia in dias_semana:
+        posicion = dias_semana[dia]
+        print(f"{dia} es el día número {posicion} de la semana.")
+
+if __name__ == "__main__":
+    main()
+'''
+
+#4.
+
+
+def main():
+    numero = int(input("Introduce un número entero: "))
+    
+    clasificacion = ""
+    
+    if numero > 0:
+        clasificacion += "positivo, "
+    else:
+        clasificacion += "negativo, "
+    
+    if numero % 2 == 0:
+        clasificacion += "par y "
+    else:
+        clasificacion += "impar y "
+    
+    if numero < 100:
+        clasificacion += "menor que 100"
+    else:
+        clasificacion += "mayor que 100"
+    
+    print(f"Es un número {clasificacion}.")
+
+if __name__ == "__main__":
+    main()
+
+
+#6. 
+'''
+def main():
+    arreglo = ['Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si']
+    
+    secuencia = [
+        arreglo[6], arreglo[6], arreglo[0], arreglo[1], arreglo[1],
+        arreglo[0], arreglo[6], arreglo[5], arreglo[4], arreglo[4],
+        arreglo[5], arreglo[6], arreglo[6], arreglo[5], arreglo[5]
+    ]
+    
+    for nota in secuencia:
+        print(nota, end=' ')
+
+if __name__ == "__main__":
+    main()
+'''
+
+#7. 
+'''
+def main():
+    Nombres = ["Jose Miguel", "Carlos", "Manuel", "Memo"]
+    
+    elemento = input("Introduce un nombre: ")
+    
+    if elemento in Nombres:
+        print("True")
+    else:
+        print("False")
+
+if __name__ == "__main__":
+    main()
+'''
+
+#8
+'''
+def main():
+    Lista = [12, 456, 2, 123]
+    Lista_ordenada = sorted(Lista)
+    
+    print(Lista_ordenada)
+
+if __name__ == "__main__":
+    main()
+'''
+
+

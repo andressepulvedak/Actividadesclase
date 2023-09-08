@@ -1,0 +1,13 @@
+# Obtener los tres números del usuario
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+num3 = float(input("Ingresa el tercer número: "))
+
+# Encontrar el máximo de los tres números
+maximo = max(num1, num2, num3)
+
+# Imprimir el resultado
+print("El máximo de los tres números es:", maximo)
+
+
+

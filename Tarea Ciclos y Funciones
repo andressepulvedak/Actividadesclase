@@ -1,0 +1,144 @@
+#1
+'''
+def main():
+        numero = int(input("Ingresa un número: "))
+        suma = 0
+
+        for i in range(numero + 1):
+            suma += i
+
+        print("La suma de 0 a", numero, "es:", suma)
+
+if __name__ == "__main__":
+    main()
+'''
+
+#2
+'''
+def main():
+    numeros = []
+    
+    while True:
+        try:
+            numero = int(input())
+            numeros.append(numero)
+            
+            if numero == 0:
+                break
+            
+        except ValueError:
+            print("Por favor, ingresa un número válido.")
+
+    if len(numeros) > 0:
+        promedio = sum(numeros) / len(numeros)
+        print("El promedio es:", promedio)
+
+if __name__ == "__main__":
+    main()
+'''
+
+#3 
+'''
+def main():
+    try:
+        n = int(input())
+        
+        lista_compras = []
+        
+        for i in range(n):
+            articulo = input(f"Ingrese el artículo {i + 1}: ")
+            lista_compras.append(articulo)
+        
+        lista_compras.sort()
+        
+        print()
+        for i, articulo in enumerate(lista_compras, start=1):
+            print(f"{i}. {articulo}")
+            
+    except ValueError:
+        print("Por favor, ingresa un número válido.")
+
+if __name__ == "__main__":
+    main()
+'''
+
+#4
+'''
+def main():
+    try:
+        n = int(input("números en la lista: "))
+        
+        numeros = []
+        
+        for i in range(n):
+            numero = int(input(f"Ingrese el número {i + 1}: "))
+            numeros.append(numero)
+        
+        numeros_pares = [num for num in numeros if num % 2 == 0]
+        
+        print()
+        for i, num in enumerate(numeros_pares, start=1):
+            print(f"{i}. {num}")
+            
+    except ValueError:
+        print("Por favor, ingresa un número válido.")
+
+if __name__ == "__main__":
+    main()
+'''
+
+#5
+'''
+def obtener_vocales(cadena):
+    vocales = "aeiouAEIOU"
+    vocales_encontradas = [char for char in cadena if char in vocales]
+    return "".join(vocales_encontradas)
+
+entrada = input("Ingresa una cadena de texto: ")
+vocales_resultantes = obtener_vocales(entrada)
+print("Las vocales son:", vocales_resultantes)
+'''
+
+#6
+'''
+def main(numero):
+    return numero % 243 == 0
+
+numero = int(input("Ingresa un número: "))
+if main(numero):
+    print(f"{numero} es divisible por 243.")
+else:
+    print(f"{numero} no es divisible por 243.")
+'''
+
+#7
+'''
+def multiplicarString(s, n):
+    if n <= 0:
+        return ""
+    else:
+        return s * n
+
+cadena = input("Ingresa un texto: ")
+numero = int(input("Ingresa un número: "))
+
+resultado = multiplicarString(cadena, numero)
+print(resultado)
+'''
+
+import math
+import random
+
+def rng(a,b):
+    return random.randint(a,b)
+
+def pisodivisión(a,b):
+    return math.floor(a/b)
+
+print()
+
+
+
+
+
+
